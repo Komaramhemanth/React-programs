@@ -1,20 +1,16 @@
+// Import the React and ReactDOM libraries
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 
-function Car(props) {
-  return <h2>I am a { props.brand }!</h2>;
-}
-
-function Garage() {
+// Create a React component
+const App = () => {
   return (
-    <>
-	    <h1>Who lives in my garage?</h1>
-	    <Car brand="Ford" />
-    </>
+    <div>
+      <h1>Hello, React!</h1>
+      <p>This is a simple React program.</p>
+    </div>
   );
-}
+};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);
-
-              
+// Render the component to the DOM
+ReactDOM.render(<App />, document.getElementById('root'));
